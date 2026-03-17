@@ -76,5 +76,5 @@ jobs:
           category: Security/SCA
 
       - name: SBOM upload
-        continue-on-error: true
+        continue-on-error: true #ignore the dependancy graph activation error for the repository and dont fail the whole job
         uses: advanced-security/spdx-dependency-submission-action@v0.1.1
