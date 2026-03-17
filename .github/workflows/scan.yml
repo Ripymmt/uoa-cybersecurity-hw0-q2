@@ -76,4 +76,5 @@ jobs:
           category: Security/SCA
 
       - name: SBOM upload
+        continue-on-error: true
         uses: advanced-security/spdx-dependency-submission-action@v0.1.1
